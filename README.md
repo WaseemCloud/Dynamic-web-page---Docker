@@ -16,7 +16,7 @@ b) All the used images
 
 c) Dockerfile
 
-In you directory, you should be having something similar to this:
+In your directory, you should be having something similar to this:
 
 ![image](https://github.com/WaseemCloud/Dynamic-web-page---Docker/assets/157589909/ae33018b-5512-4ba2-9be6-a85287503d8f)
 
