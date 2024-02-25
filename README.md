@@ -50,7 +50,7 @@ We will also need to expose port 80 to allow the access to this container throug
 --------------------------------
 # 2) Building Your Container Image:
 --------------------------------
-Now, you should be ready to build our container image.
+Now, you should be ready to build you very first container image.
 
 # Build Command: 
 
