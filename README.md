@@ -11,7 +11,7 @@ Open your Visual Studio and run the following command in the Terminal:
 
 docker --version
 
-As soon as we confirm that Docker is installed on your machine, we create a directory and make sure to include the following components in it:
+As soon as we confirm that Docker Desktop is installed on your machine, we create a directory and make sure to include the following components in it:
 
 a) Index.html
 
@@ -49,6 +49,31 @@ We will also need to expose port 80 to allow the access to this container throug
 Now, you should be ready to build our container image.
 
 # Build Command: 
+
 docker build -t mycontainer .
+
+Let’s confirm that the docker image is successfully created from the Docker Desktop app:
+
+![image](https://github.com/WaseemCloud/Dynamic-web-page---Docker/assets/157589909/1914b1b3-ea5d-45b2-ae73-1c2aad7fb7e4)
+
+--------------------------------
+# 2) Running Your Container:
+--------------------------------
+Now, it’s time to run the container:
+
+# Run Command: 
+
+docker run -p 8080:80 mycontainer
+
+Revert back to your Docker Desktop app to confirm that the container is up and running:
+![image](https://github.com/WaseemCloud/Dynamic-web-page---Docker/assets/157589909/2bf7ec66-c51e-4539-9a1f-aa37726ffc41)
+
+
+Finally, we can access our containarized web app through the local host:
+
+http://localhost:8080/
+
+![image](https://github.com/WaseemCloud/Dynamic-web-page---Docker/assets/157589909/c67e639d-7248-4905-b21f-36bfd9563535)
+
 
 
