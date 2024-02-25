@@ -1,5 +1,5 @@
 # Dynamic-web-page---Docker
-The aim of this little tutorial is to demonstrate how to dockerize a simple webapp. The objective is not to showcase the application, but it is to familarize you with dealing with docker container images and building them. Our app will be a simple dynamic web-page.
+The aim of this little tutorial is to demonstrate how to dockerize a simple webapp. The objective is not to showcase the application, but it is to familarize you with dealing with docker container images and building them. For simplicity, our app will be a simple dynamic web-page.
 
 
 
