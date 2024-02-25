@@ -1,5 +1,9 @@
 # Dynamic-web-page---Docker
-The aim of this little tutorial is to demonstrate how to dockerize a simple webapp. Our app will be a simple dynamic web-page.
+The aim of this little tutorial is to demonstrate how to dockerize a simple webapp. The objective is not to showcase the application, but it is to familarize you with dealing with docker container images and building them. Our app will be a simple dynamic web-page.
+
+
+
+
 If you are using Windows, make sure to install Docker Desktop on our machine:
 
 ![image](https://github.com/WaseemCloud/Dynamic-web-page---Docker/assets/157589909/284c97b6-9777-47b8-9ef1-8ef1c00d20bf)
@@ -57,7 +61,7 @@ Let’s confirm that the docker image is successfully created from the Docker De
 ![image](https://github.com/WaseemCloud/Dynamic-web-page---Docker/assets/157589909/1914b1b3-ea5d-45b2-ae73-1c2aad7fb7e4)
 
 --------------------------------
-# 2) Running Your Container:
+# 3) Running Your Container:
 --------------------------------
 Now, it’s time to run the container:
 
