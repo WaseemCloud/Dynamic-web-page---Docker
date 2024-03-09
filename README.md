@@ -1,4 +1,5 @@
-# Dynamic-web-page---Docker
+# Dynamic-web-page---Docker ![kisspng-docker-application-software-software-deployment-mi-docker-5ba331e62a2ce0 4850087515374217981728-removebg-preview](https://github.com/WaseemCloud/Dynamic-web-page---Docker/assets/157589909/7ad105da-5471-499e-9e21-e8bd93247787)
+
 The aim of this little tutorial is to demonstrate how to dockerize a simple webapp. The objective is not to showcase the application, but it is to familarize you with dealing with docker container images and building them. For simplicity, our app will be a simple dynamic web-page.
 
 
@@ -13,7 +14,7 @@ If you are using Windows, make sure to install Docker Desktop on our machine:
 --------------------------------
 Open your Visual Studio and run the following command in the Terminal:
 
-docker --version
+      docker --version
 
 As soon as we confirm that Docker Desktop is installed on your machine, we create a directory and make sure to include the following components in it:
 
@@ -31,16 +32,16 @@ In your directory, you should be having something similar to this:
 Let's take a look at our Dockerfile, and explain each line in it:
 
 # Here we are using an official nginx base image
-FROM nginx:alpine
+    FROM nginx:alpine
 
 # Copying the contents of the local directory to the container at /usr/share/nginx/html
-COPY . /usr/share/nginx/html
+    COPY . /usr/share/nginx/html
 
 # Exposing port 80 to the outside world
-EXPOSE 80
+    EXPOSE 80
 
 # Command to run when the container starts
-CMD ["nginx", "-g", "daemon off;"]
+    CMD ["nginx", "-g", "daemon off;"]
 
 As we can see, we are using the official container base image “nginx” to create a web server. Then we copy our index.html and all the images used in this site to the directory “/usr/share/nginx/html” of the built container.
 
@@ -54,7 +55,7 @@ Now, you should be ready to build you very first container image.
 
 # Build Command: 
 
-docker build -t mycontainer .
+    docker build -t mycontainer .
 
 Let’s confirm that the docker image is successfully created from the Docker Desktop app:
 
@@ -67,7 +68,7 @@ Now, it’s time to run the container:
 
 # Run Command: 
 
-docker run -p 8080:80 mycontainer
+    docker run -p 8080:80 mycontainer
 
 Revert back to your Docker Desktop app to confirm that the container is up and running:
 ![image](https://github.com/WaseemCloud/Dynamic-web-page---Docker/assets/157589909/2bf7ec66-c51e-4539-9a1f-aa37726ffc41)
