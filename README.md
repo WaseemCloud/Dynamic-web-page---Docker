@@ -31,6 +31,12 @@ In your directory, you should be having something similar to this:
 
 Let's take a look at our Dockerfile, and explain each line in it:
 
+    FROM nginx:alpine
+    COPY . /usr/share/nginx/html
+    EXPOSE 80
+    CMD ["nginx", "-g", "daemon off;"]
+
+
 # Here we are using an official nginx base image
     FROM nginx:alpine
 
